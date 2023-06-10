@@ -2,6 +2,13 @@
 <html>
 <head>
 <title>Home</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
@@ -15,15 +22,15 @@
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <script defer src="js/jquery.flexslider.js"></script>
 <script type="text/javascript">
-	$(window).load(function(){
-	  $('.flexslider').flexslider({
-		animation: "slide",
-		start: function(slider){
-		  $('body').removeClass('loading');
-		}
-	  });
-	});
-</script>
+						$(window).load(function(){
+						  $('.flexslider').flexslider({
+							animation: "slide",
+							start: function(slider){
+							  $('body').removeClass('loading');
+							}
+						  });
+						});
+					  </script>
 <!-- //FlexSlider -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
@@ -44,291 +51,339 @@
 
 <body>
 <!-- header -->
-<div class="header">
-	<div class="container">
-		<div class="header-nav">
-			<nav class="navbar navbar-default">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				  </button>
-					<div class="logo">
-						<h1><a class="navbar-brand" href="index.html"><label>D</label>emi<label>G</label>gao<span>from zero to hero</span></a></h1>
+	<div class="header">
+		<div class="container">
+			<div class="header-nav">
+				<nav class="navbar navbar-default">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+						<div class="logo">
+							<h1><a class="navbar-brand" href="index.html"><label>D</label>emi <label>G</label>ao<span>from zero to hero </span></a></h1>
+						</div>
 					</div>
-				</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a class="hvr-bounce-to-bottom scroll" href="#about">About</a></li>
-						<li><a class="hvr-bounce-to-bottom scroll" href="#skills">Skills</a></li>
-						<li><a class="hvr-bounce-to-bottom scroll" href="#experience">Experience</a></li>
-						<li><a class="hvr-bounce-to-bottom scroll" href="#hobbies">Hobbies</a></li>
-						<li><a class="hvr-bounce-to-bottom scroll" href="#contact">Contact</a></li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</nav>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					 <ul class="nav navbar-nav">
+						<li class="hvr-sweep-to-bottom active"><a href="index.html">Home</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="#skill" class="scroll">Skill</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="#experience" class="scroll">Experience</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="#hobby" class="scroll">Hobby</a></li>
+						<li class="hvr-sweep-to-bottom"><a href="#contact" class="scroll">Contact</a></li>
+					  </ul>
+					</div><!-- /.navbar-collapse -->
+				</nav>
+			</div>
 		</div>
 	</div>
-</div>
 <!-- //header -->
-<!-- about -->
-	<div id="about" class="about">
+<!-- banner -->
+	<div class="banner">
 		<div class="container">
-			<div class="about-grids">
-				<div class="col-md-6 about-grid-left">
-					<h3>Welcome</h3>
-					<h5>About Me</h5>
-					<div class="top-about-grids">
-						<div class="col-sm-6 about-grid-left1">
-							<img src="images/a1.jpg" alt=""/>
-						</div>
-						<div class="col-sm-6 about-grid-right1">
-							<h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-							<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-						</div>
-						<div class="clearfix"></div>
+			<section class="slider">
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Project 1: Financial App </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Project 2: Machine Learning  </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info">
+								<div class="banner-info-left">
+									<h3>Project 3: Blockchain dApp </h3>
+									<p>WE ARE EXCITED TO COOK FOR YOU TODAY</p>
+									<div class="more">
+										<a href="#">Learn More</a>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>	
+			<div class="banner-pos">
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-cloud" aria-hidden="true"></i> Business</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
 					</div>
 				</div>
-				<div class="col-md-6 about-grid-right">
-					<div class="skills">
-						<h3>My Skills</h3>
-						<h5>Design Skills</h5>
-						<div class="skill1">
-							<h4>Photoshop</h4>
-							<div class="skillbar" data-percent="85%">
-								<span class="skillbar-bar" style="width: 85%;"></span>
-								<span class="skill-bar-percent">85%</span>
-							</div>
-							<!-- End Skill Bar -->
-							<div class="clearfix"></div>
-						</div>
-						<div class="skill2">
-							<h4>Illustrator</h4>
-							<div class="skillbar" data-percent="80%">
-								<span class="skillbar-bar" style="width: 80%;"></span>
-								<span class="skill-bar-percent">80%</span>
-							</div>
-							<!-- End Skill Bar -->
-							<div class="clearfix"></div>
-						</div>
-						<div class="skill3">
-							<h4>InDesign</h4>
-							<div class="skillbar" data-percent="90%">
-								<span class="skillbar-bar" style="width: 90%;"></span>
-								<span class="skill-bar-percent">90%</span>
-							</div>
-							<!-- End Skill Bar -->
-							<div class="clearfix"></div>
-						</div>
-						<div class="skill4">
-							<h4>HTML/CSS</h4>
-							<div class="skillbar" data-percent="95%">
-								<span class="skillbar-bar" style="width: 95%;"></span>
-								<span class="skill-bar-percent">95%</span>
-							</div>
-							<!-- End Skill Bar -->
-							<div class="clearfix"></div>
-						</div>
-						<div class="skill5">
-							<h4>WordPress</h4>
-							<div class="skillbar" data-percent="75%">
-								<span class="skillbar-bar" style="width: 75%;"></span>
-								<span class="skill-bar-percent">75%</span>
-							</div>
-							<!-- End Skill Bar -->
-							<div class="clearfix"></div>
-						</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-globe" aria-hidden="true"></i> Fintech</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
 					</div>
 				</div>
-				<div class="clearfix"></div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-phone" aria-hidden="true"></i> Goal</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="col-md-3 banner-pos-left">
+					<div class="banner-pos-left-info">
+						<h3><i class="glyphicon glyphicon-star" aria-hidden="true"></i> Vision</h3>
+						<p>To take a trivial example, which of us ever undertakes laborious 
+							physical exercise.</p>
+					</div>
+				</div>
+				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
-	<!-- //about -->
+<!-- //banner -->
 
-	<!-- skills -->
-	<div id="skills" class="skills">
-		<div class="container">
-			<h3>My Skills</h3>
-			<h5>Programming Skills</h5>
-			<div class="skills-grid">
-				<div class="col-md-4 skills-grid-left">
-					<h4>HTML/CSS</h4>
-					<div class="skillbar" data-percent="95%">
-						<span class="skillbar-bar" style="width: 95%;"></span>
-						<span class="skill-bar-percent">95%</span>
-					</div>
-					<!-- End Skill Bar -->
+
+<!-- Skill -->
+	<div id="skill" class="advantages">
+	<div class="container">
+		<h3>Skills & Tools</h3>
+		
+		
+		<div class="our-advantages-grids w3layouts-agile">
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p></p>
 				</div>
-				<div class="col-md-4 skills-grid-left">
-					<h4>JavaScript</h4>
-					<div class="skillbar" data-percent="80%">
-						<span class="skillbar-bar" style="width: 80%;"></span>
-						<span class="skill-bar-percent">80%</span>
-					</div>
-					<!-- End Skill Bar -->
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4></h4>
+					<p></p>
 				</div>
-				<div class="col-md-4 skills-grid-left">
-					<h4>Python</h4>
-					<div class="skillbar" data-percent="75%">
-						<span class="skillbar-bar" style="width: 75%;"></span>
-						<span class="skill-bar-percent">75%</span>
-					</div>
-					<!-- End Skill Bar -->
-				</div>
-				<div class="clearfix"></div>
+				<div class="clearfix"> </div>
 			</div>
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p>Language</p>
+				</div>
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4>Online Booking</h4>
+					<p>Vel illum qui dolorem eum fugiat quo voluptas 
+						nulla pariatur eum iure reprehenderit.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p>Task</p>
+				</div>
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4>Best Quality</h4>
+					<p>Vel illum qui dolorem eum fugiat quo voluptas 
+						nulla pariatur eum iure reprehenderit.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="our-advantages-grids">
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p></p>
+				</div>
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4></h4>
+					<p></p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p>Tool</p>
+				</div>
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4>Healthy Ingredients</h4>
+					<p>Vel illum qui dolorem eum fugiat quo voluptas 
+						nulla pariatur eum iure reprehenderit.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="col-md-4 our-advantages-grid">
+				<div class="col-xs-3 our-advantages-grd-left">
+					<p>Task</p>
+				</div>
+				<div class="col-xs-9 our-advantages-grd-right">
+					<h4>Awesome Flavours</h4>
+					<p>Vel illum qui dolorem eum fugiat quo voluptas 
+						nulla pariatur eum iure reprehenderit.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="clearfix"> </div>
 		</div>
 	</div>
-	<!-- //skills -->
-
-	<!-- experience -->
-	<div id="experience" class="experience">
+<!-- //skill -->
+<!-- experience -->
+	<div id="experience" class="experience"></div>
 		<div class="container">
-			<h3>Experience</h3>
-			<h5>Work Experience</h5>
-			<div class="experience-grids">
-				<div class="experience-left">
-					<h4>Senior Web Developer</h4>
-					<h6>ABC Company</h6>
-					<h6>2019 - Present</h6>
+			<div class="col-md-6 history-left">	
+				<h3>Professional Experience</h3>
+				
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>21.7.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
 				</div>
-				<div class="experience-right">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus erat vel aliquam pulvinar. In vel fringilla velit. Duis auctor neque vitae tortor mattis, sit amet dictum orci rutrum. Sed interdum augue quis elit porta aliquam.</p>
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>28.7.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
 				</div>
-				<div class="clearfix"></div>
+				<div class="history-left-grid">
+					<p><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i>03.8.2016</p>
+					<h4>consequatur aut perferendis</h4>
+					<p class="aut">Itaque earum rerum hic tenetur a sapiente delectus,
+						ut aut reiciendis voluptatibus maiores alias consequatur voluptates repudiandae sint et 
+						molestiae non recusandae aut perferendis.</p>
+				</div>
 			</div>
-		</div>
-	</div>
-	<!-- //experience -->
-
-	<!-- hobbies -->
-	<div id="hobbies" class="hobbies">
-		<div class="container">
-			<h3>Hobbies</h3>
-			<h5>My Interests</h5>
-			<div class="hobbies-grids">
-				<div class="col-md-4 hobbies-grid-left">
-					<img src="images/h1.jpg" alt=""/>
-					<h4>Photography</h4>
-				</div>
-				<div class="col-md-4 hobbies-grid-left">
-					<img src="images/h2.jpg" alt=""/>
-					<h4>Gaming</h4>
-				</div>
-				<div class="col-md-4 hobbies-grid-left">
-					<img src="images/h3.jpg" alt=""/>
-					<h4>Traveling</h4>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!-- //hobbies -->
-
-	<!-- contact -->
-	<div id="contact" class="contact">
-		<div class="container">
-			<h3>Contact</h3>
-			<h5>Get in touch with me</h5>
-			<div class="contact-form">
-				<form action="#" method="post">
-					<input type="text" name="Name" placeholder="Name" required="">
-					<input type="email" class="email" name="Email" placeholder="Email" required="">
-					<textarea placeholder="Message" name="Message" required=""></textarea>
-					<input type="submit" value="SUBMIT">
-				</form>
-			</div>
-		</div>
-	</div>
-	<!-- //contact -->
-
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			<div class="footer-left">
-				<p>&copy; 2023 DemiGgao. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
-			</div>
-			<div class="footer-right">
-				<ul class="social-icons">
-					<li><a href="#" class="twitter" target="_blank"></a></li>
-					<li><a href="#" class="facebook" target="_blank"></a></li>
-					<li><a href="#" class="googleplus" target="_blank"></a></li>
-					<li><a href="#" class="linkedin" target="_blank"></a></li>
-					<li><a href="#" class="dribbble" target="_blank"></a></li>
+			<div class="col-md-6 history-right">
+				<h3>Successful Project</h3>
+				<h4>voluptatibus maiores alias</h4>
+				<p>To take a trivial example, which of us ever undertakes laborious physical 
+					exercise, except to obtain some advantage from it? But who has any right to 
+					find fault with a man who chooses to enjoy a pleasure.</p>
+				<ul>
+					<li><a href="#">recusandae aut perferendis</a></li>
+					<li><a href="#">voluptatibus maiores alias</a></li>
+					<li><a href="#">molestiae non recusandae</a></li>
+					<li><a href="#">alias consequatur voluptates</a></li>
+					<li><a href="#">tenetur a sapiente delectus</a></li>
+					<li><a href="#">earum rerum hic tenetur</a></li>
 				</ul>
 			</div>
-			<div class="clearfix"></div>
+			<div class="clearfix"> </div>
 		</div>
 	</div>
-	<!-- //footer -->
+<!-- //experience -->
+<!-- hobby -->
+	<div id="bobby" class="hobby"></div>
+	<div class="container">
+		<h2>My Hobbies</h2>
+		<p class="ever">Generally speaking, I am glad to be me.</p>
+		<div class="welcome-grids">
+			<div class="col-md-3 welcome-grid">
+				<div class="welcome-grd">
+					<div class="icons">
+						<span class="glyphicon glyphicon-cutlery"></span>
+					</div>
+					<h4>cooking</h4>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+						esse quam.</p>
+				</div>
+			</div>
+			<div class="col-md-3 welcome-grid">
+				<div class="welcome-grd">
+					<div class="icons">
+						<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+					</div>
+					<h4>dancing</h4>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+						esse quam.</p>
+				</div>
+			</div>
+			<div class="col-md-3 welcome-grid">
+				<div class="welcome-grd">
+					<div class="icons">
+						<span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+					</div>
+					<h4>detective fiction</h4>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+						esse quam.</p>
+				</div>
+			</div>
+			<div class="col-md-3 welcome-grid">
+				<div class="welcome-grd">
+					<div class="icons">
+						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+					</div>
+					<h4>travelling</h4>
+					<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit 
+						esse quam.</p>
+				</div>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //hobby -->
+<!-- contact -->
+	<div id="contact" class="contact">
+	<div class="container">
+		<h3>Contact Me</h3>
+		<p class="ever">To explore me more, please feel free to contact me.</p>
+		<div class="contact-us1-bottom w3layouts-agile">
+			<form action="#" method="post">
+							<input type="text" placeholder="Name" required="">			
+									<input type="email" placeholder="Email" required="">			
+									
+									<textarea placeholder="Message" required=""></textarea>
+									<input type="submit" value="Submit" >
 
-	<!-- smooth scrolling -->
+							</form>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //contact -->
+<!-- footer -->
+	<div class="copy">
+		<div class="container">
+			<div class="copy-left-w3l-agile">
+				<p>Copyright &copy; 2023.Demi Gao All rights reserved.<a target="_blank" >&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!--//footer-->
+<!-- for bootstrap working -->
+		<script src="js/bootstrap.js"> </script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/*
-			 *  Simple image gallery. Uses default settings
-			 */
-
-			$('.fancybox').fancybox();
-
-		});
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
 	</script>
-	<!-- //smooth scrolling -->
-	<!-- gallery -->
-	<script src="js/jquery.chocolat.js"></script>
-	<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
-	<!--light-box-files -->
-		<script>
-		$(function() {
-			$('.gallery-grid a').Chocolat();
-		});
-		</script>
-	<!-- //gallery -->
-	<!-- skills -->
-		<script src="js/skill.bars.jquery.js"></script>
-		<script>
-			$(document).ready(function(){
-				
-				$('.skillbar').skillBars({
-					from: 0,
-					speed: 4000, 
-					interval: 100,
-					decimals: 0,
-				});
-				
-			});
-		</script>
-	<!-- //skills -->
-	<!-- flexSlider -->
-		<script defer src="js/jquery.flexslider.js"></script>
-		<script>
-			$(window).load(function(){
-			  $('.flexslider').flexslider({
-				animation: "slide",
-				start: function(slider){
-				  $('body').removeClass('loading');
-				}
-			  });
-			});
-		</script>
-	<!-- //flexSlider -->
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
+<!-- //here ends scrolling icon -->
 </body>
 </html>
